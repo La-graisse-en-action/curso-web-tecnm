@@ -5,6 +5,7 @@
   --cultured: #ededed;
   --ultramarine: #0063ff;
   --crimson: #da0037;
+  --principal: var(--crimson);
 
   /* Fonts: Inter & DM Sans */
   --dm-sans: "DM Sans", sans-serif;
@@ -75,8 +76,9 @@ body {
   width: 190px;
   height: 190px;
   border-radius: 50%;
-  border: 3px solid var(--crimson);
+  border: 3px solid var(--principal);
   object-fit: cover;
+  user-select: none;
 }
 
 .btn {
@@ -97,7 +99,7 @@ body {
 }
 
 .btn--red {
-  background: var(--crimson);
+  background: var(--principal);
   color: var(--cultured);
 }
 
@@ -164,7 +166,7 @@ body {
 
 .form-styles:focus-visible {
   transition: border 0.2s ease;
-  border: 2px solid var(--crimson);
+  border: 2px solid var(--principal);
   outline: none;
 }
 
@@ -179,7 +181,7 @@ body {
   background: var(--onyx);
   display: flex;
   margin-top: 3rem;
-  border-top: 4px solid var(--crimson);
+  border-top: 4px solid var(--principal);
   justify-content: space-between;
   padding: 0 42px;
 }
@@ -198,6 +200,7 @@ body {
 .footer__list--item img {
   width: 20px;
   height: 20px;
+  user-select: none;
 }
 
 .footer__list--item a {
